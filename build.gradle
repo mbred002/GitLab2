@@ -1,6 +1,10 @@
 plugins {
    id 'java'
+   id 'application'
+   id 'eclipse'
 }
+
+mainClassName = 'DupDetector'
 
 java {
     sourceCompatibility = JavaVersion.toVersion(11)
@@ -16,7 +20,7 @@ dependencies {
     testImplementation 'org.hamcrest:hamcrest-library:2.2'
 }
 
-test {  âž�
-    ignoreFailures = true âž‚
+test {  
+    ignoreFailures = true
     useJUnitPlatform()
-}
+    }
